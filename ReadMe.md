@@ -106,3 +106,14 @@ For more information, please visit the project repository: [PDQSort Python Exten
 **Thank you for using PDQSort Python Extension!**
 
 *Cory Primm*
+
+Similar Links:
+The source:
+https://github.com/orlp/pdqsort
+Orson's walkthrough of the sorting algorithm:
+https://www.youtube.com/watch?v=jz-PBiWwNjc
+
+pdqSort implementations in straight python:
+https://github.com/Chang-Chia-Chi/pdqsort
+
+https://github.com/thatsOven/pdqsort-python
