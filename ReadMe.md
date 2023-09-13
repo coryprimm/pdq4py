@@ -56,8 +56,8 @@ To use PDQSort Python Extension, you need to install the module and import it in
 
 PDQSort Python Extension is open-source software released under the conditions described in the provided license.
 
-For more information, please visit the project repository: [PDQSort Python Extension Repository](https://github.com/your-repo-here)
+For more information, please visit the project repository: [PDQSort Python Extension Repository](https://github.com/coryprimm/pdq4py)
 
 **Thank you for using PDQSort Python Extension!**
 
-*[Your Name]*
+*Cory Primm*
