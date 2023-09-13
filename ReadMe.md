@@ -28,7 +28,7 @@ PDQSort Python Extension offers the following features:
 
 As of the current version, there are some drawbacks to be aware of:
 
-- PDQSort Python Extension may not always outperform Python's built-in TimSort algorithm for all data types. The choice of returning floats was made to speed up the results, but this may not be a fair comparison with TimSort if it were optimized similarly.
+- PDQSort Python Extension may not always outperform Python's built-in TimSort algorithm for all data types. The choice of returning floats was made to speed up the results, but this may not be a fair comparison with TimSort if it were optimized similarly.  
 - The extension has primarily been tested on a limited number of platforms, and its cross-platform compatibility may vary.
 
 ## Potential Use Cases
@@ -51,6 +51,51 @@ To use PDQSort Python Extension, you need to install the module and import it in
 
 - Orson Peters for creating the PDQSort algorithm.
 - The Python community for their support and feedback.
+
+# pdq4py
+
+pdq4py is a Python C++ extension module that provides fast sorting capabilities for lists of integers, floats, and strings.
+
+## Installation
+
+Before using pdq4py, make sure you have the required dependencies installed:
+
+1. [Python 3](https://www.python.org/downloads/): pdq4py is a Python C++ extension module, so you need Python 3 to use it.
+2. [pybind11](https://pybind11.readthedocs.io/en/stable/): pdq4py utilizes pybind11 to create the Python C++ extension.
+3. C++ Compiler: You'll also need a C++ compiler to compile the C++ code that powers the extension. Ensure you have a C++ compiler installed on your system.
+
+   You can install pybind11 and its global development dependencies using pip3:
+
+   ```bash
+   pip3 install "pybind11[global]"
+Building the Extension
+Once you have installed pybind11, you can build the C++ extension for pdq4py using the following command:
+
+bash
+Copy code
+python3 setup.py build_ext --inplace
+This command will compile the C++ code and generate a shared library (.so file) in the current directory.
+
+Usage
+To use pdq4py, import it as a Python module in your Python scripts:
+
+python
+Copy code
+import pdq4py
+
+# Now you can use pdq4py's sorting functions
+Example
+Here's an example of how to use pdq4py to sort a list of numbers:
+
+python
+Copy code
+import pdq4py
+
+numbers = [4.5, 1.2, 3.7, 2.0, 6.1, 5.3]
+sorted_numbers = pdq4py.pdqSort(numbers)
+print(sorted_numbers)
+Contributing
+If you'd like to contribute to pdq4py or report issues, please visit the GitHub repository. We welcome contributions and feedback from the community.
 
 ## License
 
